@@ -114,6 +114,34 @@
       margin-top: 10px;
     }
 
+    /* Download QR Button */
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #0f172a;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 11px 20px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.12), 0 2px 4px -2px rgba(15, 23, 42, 0.08);
+    }
+
+    .btn-download:hover {
+      background: #1e293b;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 10px -1px rgba(15, 23, 42, 0.16);
+    }
+
+    .btn-download:active {
+      transform: translateY(0);
+    }
+
     /* Step-by-Step Instructions */
     .steps-container {
       background: #f8fafc;
@@ -200,15 +228,15 @@
         <circle cx="12" cy="12" r="10"></circle>
         <polyline points="12 6 12 12 16 14"></polyline>
       </svg>
-      Payment Pending
+      Website Temporarily Inactive
     </div>
 
     <!-- Title -->
-    <h1>Website Activation Pending</h1>
+    <h1>Payment Required to Activate Website</h1>
 
     <!-- Description -->
     <p class="description">
-      Please scan the QR code below to complete the payment for your website. Once payment is received and approved by the administrator, this page will be removed and your website will go live.
+      This website has been temporarily deactivated pending final payment. Please complete the transaction using the QR code below. Once approved manually by the administrator, this page will disappear and your website will be brought live immediately.
     </p>
 
     <!-- QR Container -->
@@ -228,25 +256,37 @@
       </div>
     </div>
 
+    <!-- Download QR Code Button -->
+    <div>
+      <a href="qr.png" download="payment-qr.png" class="btn-download">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download QR Code
+      </a>
+    </div>
+
     <!-- Simple Steps -->
     <div class="steps-container">
       <div class="step-item">
         <span class="step-number">1</span>
-        <span>Scan QR code and complete payment</span>
+        <span>Scan QR code directly or download image to pay via UPI app</span>
       </div>
       <div class="step-item">
         <span class="step-number">2</span>
-        <span>Share the payment screenshot with the admin</span>
+        <span>Complete payment</span>
       </div>
       <div class="step-item">
         <span class="step-number">3</span>
-        <span>Admin verifies and publishes your website</span>
+        <span>Send confirmation/screenshot to admin for manual approval &amp; instant activation</span>
       </div>
     </div>
 
     <!-- Notice -->
     <div class="notice">
-      Thank you for your patience! Activation typically takes just a few minutes after verification.And it will take time if Admin is Busy.
+      Thank you for your cooperation. Activation is processed shortly after verification.And it will take time if Admin is Busy.<br> Website Activation time 10:00 am to 9:00 pm
     </div>
 
   </main>
